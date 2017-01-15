@@ -5,6 +5,8 @@
 const Lang = imports.lang;
 const Main = imports.ui.main;
 
+const width = 300;
+
 
 function init(em)
 {
@@ -36,6 +38,10 @@ HoppingWindow.prototype =
     this.despawn_window()
 
     let target = this.find_window("YouTube")
+    if (target)
+      this.spawn_window(target)
+
+    let target = this.find_window("Twitch")
     if (target)
       this.spawn_window(target)
   }
@@ -81,7 +87,7 @@ HoppingWindow.prototype =
     this.despawn_window()
 
     this.preview = new imports.gi.St.Button({ style_class: "youtube-preview" })
-    let th = this.generate_texture(win, 150)
+    let th = this.generate_texture(win, width)
     this.preview.add_actor(th)
 
 
