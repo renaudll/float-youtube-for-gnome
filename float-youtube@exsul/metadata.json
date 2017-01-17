@@ -2,6 +2,7 @@
     "description": "Watch youtube while working\n\n\nOpen YouTube in separate window. Move it to other workspace. (Ctrl+Shift+Alt+Down, or by mouse), return to your workspace (Ctrl+Alt+Up)",
     "name": "YouTube popup web-browser extention",
     "shell-version": [
+        "3.14",
         "3.16",
         "3.18",
         "3.20"
